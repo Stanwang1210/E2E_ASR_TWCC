@@ -43,7 +43,7 @@ model:                                     # Model architecture
     vgg: 1                                 # 4x reduction on time feature extraction
     vgg_freq: 1
     vgg_low_filt: -1
-    module: 'GRU'                         # 'LSTM'/'GRU'/'Transformer'
+    module: 'Transformer'                         # 'LSTM'/'GRU'/'Transformer'
     bidirection: True
     dim: [512,512]
     dropout: [0.2,0.2]
@@ -60,7 +60,7 @@ model:                                     # Model architecture
     loc_kernel_size: 100                   # just for mode=='loc'
     loc_kernel_num: 10                     # just for mode=='loc'
   decoder:
-    module: 'GRU'                         # 'LSTM'/'GRU'/'Transformer'
+    module: 'Transformer'                         # 'LSTM'/'GRU'/'Transformer'
     dim: 512
     layer: 1
     dropout: 0
