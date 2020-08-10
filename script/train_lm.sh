@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CONFIG="librispeech_lm"
-DIR="/data/storage/harry/E2E_ASR"
+DIR="/work/b07u1234/b07701209/model_dir"
 
 echo "Start running training process of RNNLM"
 CUDA_VISIBLE_DEVICES=$2 python3 main.py --config config/${CONFIG}.yaml \
