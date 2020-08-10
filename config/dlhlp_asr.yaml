@@ -52,7 +52,7 @@ model:                                     # Model architecture
     sample_rate: [1,1]
     sample_style: 'drop'                   # 'drop'/'concat'
   attention:
-    mode: 'loc'                            # 'dot'/'loc'
+    mode: 'dot'                            # 'dot'/'loc'
     dim: 300
     num_head: 1
     v_proj: False                          # if False and num_head>1, encoder state will be duplicated for each head
