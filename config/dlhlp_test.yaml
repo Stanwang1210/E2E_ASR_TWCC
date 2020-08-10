@@ -8,8 +8,8 @@ data:
     bucketing: False
     batch_size: 1
 src:
-  config: '/data/storage/harry/End-to-end-ASR-Pytorch/config/dlhlp_asr.yaml'
-  ckpt: '/data/storage/harry/test_env/dlhlp_ckpt/hw1_best_att_dev.pth'
+  config: '/work/b07u1234/b07701209/E2E_ASR_TWCC/config/dlhlp_asr.yaml'
+  ckpt: '/work/b07u1234/b07701209/model_dir/hello/ckpt/best_att_dev.pth'
 
 decode:
   beam_size: 1
