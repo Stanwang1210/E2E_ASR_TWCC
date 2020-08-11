@@ -50,7 +50,7 @@ model:                                     # Model architecture
     layer_norm: [False,False]
     proj: [True,True]                      # Linear projection + Tanh after each rnn layer
     sample_rate: [1,1]
-    sample_style: 'concat'                   # 'drop'/'concat'
+    sample_style: 'drop'                   # 'drop'/'concat'
   attention:
     mode: 'loc'                            # 'dot'/'loc'
     dim: 300
@@ -63,4 +63,4 @@ model:                                     # Model architecture
     module: 'LSTM'                         # 'LSTM'/'GRU'/'Transformer'
     dim: 512
     layer: 1
-    dropout: 0
+    dropout: 0.2
