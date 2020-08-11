@@ -47,10 +47,10 @@ model:                                     # Model architecture
     bidirection: True
     dim: [512,512]
     dropout: [0.2,0.2]
-    layer_norm: [True,True]
+    layer_norm: [False,False]
     proj: [True,True]                      # Linear projection + Tanh after each rnn layer
     sample_rate: [1,1]
-    sample_style: 'drop'                   # 'drop'/'concat'
+    sample_style: 'concat'                   # 'drop'/'concat'
   attention:
     mode: 'loc'                            # 'dot'/'loc'
     dim: 300
