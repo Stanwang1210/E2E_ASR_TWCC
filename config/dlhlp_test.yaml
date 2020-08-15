@@ -8,7 +8,7 @@ data:
     bucketing: False
     batch_size: 1
 src:
-  config: '/work/b07u1234/b07701209/E2E_ASR_TWCC/config/dlhlp_asr.yaml'
+  config: '/work/b07u1234/b07701209/E2E_ASR_TWCC/config/dlhlp_asr_best2.yaml'
   ckpt: '/work/b07u1234/b07701209/model_dir/ckpt/decode_dropout_02/best_att_dev.pth'
 
 decode:
