@@ -8,8 +8,8 @@ data:
     bucketing: False
     batch_size: 1
 src:
-  config: '/work/b07u1234/b07701209/E2E_ASR_TWCC/config/dlhlp_asr_best1.yaml'
-  ckpt: '/work/b07u1234/b07701209/model_dir/ckpt/strong_trial_best1/best_att_dev.pth'
+  config: '/work/b07u1234/b07701209/E2E_ASR_TWCC/config/dlhlp_asr_best3.yaml'
+  ckpt: '/work/b07u1234/b07701209/model_dir/ckpt/strong_trial_best3/best_att_dev.pth'
 
 decode:
   beam_size: 1
