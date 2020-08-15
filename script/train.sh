@@ -3,7 +3,7 @@
 # $1 : experiment name
 # $2 : cuda id
 
-CONFIG="dlhlp_asr_best1"
+CONFIG="dlhlp_asr_best2"
 
 DIR="/work/b07u1234/b07701209/model_dir"
 
