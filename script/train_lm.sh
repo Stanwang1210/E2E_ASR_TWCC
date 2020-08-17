@@ -9,6 +9,6 @@ CUDA_VISIBLE_DEVICES=$2 python3 main.py --config config/${CONFIG}.yaml \
     --njobs 8 \
     --seed 0 \
     --lm \
-    --logdir ${DIR}/log/ \
-    --ckpdir ${DIR}/ckpt/ \
-    --outdir ${DIR}/result/ \
+    --logdir ${DIR}/log_lm/ \
+    --ckpdir ${DIR}/ckpt_lm/ \
+    --outdir ${DIR}/result_lm/ \
