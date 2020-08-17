@@ -61,7 +61,7 @@ class Solver(BaseSolver):
                 txt, txt_len = self.fetch_data(data)
                 self.timer.cnt('rd')
 
-                # Forward model
+                # Forward model # run forward function
                 pred, _ = self.model(txt[:,:-1], txt_len)
 
                 # Compute all objectives
