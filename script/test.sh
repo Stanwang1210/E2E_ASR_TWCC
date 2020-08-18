@@ -13,8 +13,8 @@ CUDA_VISIBLE_DEVICES=$2 python3 main.py --config config/${CONFIG}.yaml \
 	--test \
     --njobs 8 \
     --seed 0 \
-    --ckpdir ${DIR}/ckpt/$1 \
-	--outdir ${DIR}/test_result/$1
+    --ckpdir ${DIR}/ckpt_lm/$1 \
+	--outdir ${DIR}/test_result_lm/$1
 
 # Eval
 python3 eval.py --file ${DIR}/test_result_lm/$1/$1_dev_output.csv
