@@ -6,7 +6,7 @@ data:
     train_split: ['train']
     dev_split: ['dev']
     bucketing: True
-    batch_size: 64 #default 32
+    batch_size: 32 #default 32
     
   audio:                                  # Pass to audio transform
     feat_type: 'fbank'
