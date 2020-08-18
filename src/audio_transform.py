@@ -330,8 +330,8 @@ def create_transform(audio_config, mode, post_process=True):
     if mode == 'train' or mode == 'train_lm':
         # print(mode)
         # transforms.append(audio_transform.TimeStretch())
-        transforms.append(audio_transform.Vad(SAMPLE_RATE))
-        transforms.append(audio_transform.FrequencyMasking(1))
+        #transforms.append(audio_transform.Vad(SAMPLE_RATE))
+        # transforms.append(audio_transform.FrequencyMasking(1))
         transforms.append(audio_transform.TimeMasking(1))
         print('Transformed is used !!!!!!!!!!')
     if apply_cmvn:
