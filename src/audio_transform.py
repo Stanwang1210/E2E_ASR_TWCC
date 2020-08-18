@@ -329,7 +329,7 @@ def create_transform(audio_config, mode, post_process=True):
         transforms.append(Delta(delta_order, delta_window_size))
     if mode == 'train' or mode == 'train_lm':
         print(mode)
-        transforms.append(audio_transform.TimeStretch())
+        # transforms.append(audio_transform.TimeStretch())
         transforms.append(audio_transform.Fade())
         print('Transformed is used !!!!!!!!!!')
     if apply_cmvn:
