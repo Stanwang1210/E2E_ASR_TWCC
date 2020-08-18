@@ -12,7 +12,7 @@ src:
   ckpt: '/work/b07u1234/b07701209/model_dir/ckpt/transform_trial/best_att_dev.pth'
 
 decode:
-  beam_size: 4
+  beam_size: 3
   min_len_ratio: 0.01
   max_len_ratio: 0.30
   
