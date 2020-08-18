@@ -89,7 +89,7 @@ class Delta(torch.jit.ScriptModule):
         for i, scale in enumerate(scales[:-1]):
             padding = (max_len - len(scale)) // 2
             scales[i] = [0] * padding + scale + [0] * padding
-
+        print(f'Delta Output dimension is {torch.tensor(scales).unsqueeze(1).unsqueeze(1).size()}')
         return torch.tensor(scales).unsqueeze(1).unsqueeze(1)
 
     def extra_repr(self):
@@ -328,7 +328,9 @@ def create_transform(audio_config, mode, post_process=True):
     if delta_order >= 1:
         transforms.append(Delta(delta_order, delta_window_size))
     if mode == 'train' or mode == 'train_lm':
+        print(mode)
         transforms.append(audio_transform.TimeStretch())
+        print('stre')
         transforms.append(audio_transform.Fade())
         print('Transformed is used !!!!!!!!!!')
     if apply_cmvn:
