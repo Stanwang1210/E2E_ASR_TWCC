@@ -311,7 +311,7 @@ def pop_audio_config(audio_config):
     return audio_config, feat_type, feat_dim
 
 
-def create_transform(audio_config, post_process=True):
+def create_transform(audio_config, mode, post_process=True):
     # Delta
     delta_order = audio_config.pop("delta_order", 0)
     delta_window_size = audio_config.pop("delta_window_size", 2)

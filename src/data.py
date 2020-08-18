@@ -2,7 +2,7 @@ import torch
 import numpy as np
 from functools import partial
 from src.text import load_text_encoder
-from src.audio import create_transform
+from src.audio_transform import create_transform
 from torch.utils.data import DataLoader
 from torch.nn.utils.rnn import pad_sequence
 import torch.nn.functional as F
@@ -100,11 +100,11 @@ def create_textset(tokenizer, train_split, dev_split, name, path, bucketing, bat
 
     return tr_set, dv_set, tr_loader_bs, batch_size, msg_list
 
-def load_dataset(n_jobs, use_gpu, pin_memory, ascending, corpus, audio, text):
+def load_dataset(n_jobs, use_gpu, pin_memory, ascending,  mode, corpus, audio, text):
     ''' Prepare dataloader for training/validation'''
     # Audio feature extractor
-    audio_transform_tr, feat_dim = create_transform(audio.copy())
-    audio_transform_dv, feat_dim = create_transform(audio.copy())
+    audio_transform_tr, feat_dim = create_transform(audio.copy(), mode)
+    audio_transform_dv, feat_dim = create_transform(audio.copy(), mode)
     
     # Text tokenizer
     tokenizer = load_text_encoder(**text)
