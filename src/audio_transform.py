@@ -331,8 +331,8 @@ def create_transform(audio_config, mode, post_process=True):
         # print(mode)
         # transforms.append(audio_transform.TimeStretch())
         transforms.append(audio_transform.Vad(SAMPLE_RATE))
-        transforms.append(audio_transform.FrequencyMasking(100))
-        transforms.append(audio_transform.TimeMasking(100))
+        transforms.append(audio_transform.FrequencyMasking(75))
+        transforms.append(audio_transform.TimeMasking(75))
         print('Transformed is used !!!!!!!!!!')
     if apply_cmvn:
         transforms.append(CMVN())
