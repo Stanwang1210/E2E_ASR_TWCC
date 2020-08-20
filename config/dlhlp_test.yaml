@@ -16,7 +16,7 @@ decode:
   min_len_ratio: 0.01
   max_len_ratio: 0.30
   
-  lm_path: '/work/b07u1234/b07701209/model_dir/ckpt_lm/sample_code/best_ppx.pth'
+  lm_path: '/work/b07u1234/b07701209/model_dir/ckpt_lm/lr001/best_ppx.pth'
   lm_config: '/work/b07u1234/b07701209/E2E_ASR_TWCC/config/dlhlp_lm.yaml'
   lm_weight: 0.7
   ctc_weight: 0
