@@ -18,5 +18,5 @@ decode:
   
   lm_path: '/work/b07u1234/b07701209/model_dir/ckpt_lm/lr001/best_ppx.pth'
   lm_config: '/work/b07u1234/b07701209/E2E_ASR_TWCC/config/dlhlp_lm.yaml'
-  lm_weight: 1
+  lm_weight: 0.5
   ctc_weight: 0
